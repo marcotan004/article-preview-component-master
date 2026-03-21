@@ -1,0 +1,212 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    --var-white: #FFFFFF;
+    --var-grey-200: #ECF2F8;
+    --var-grey-400: #9DAEC2;
+    --var-grey-500: #6E8098;
+    --var-grey-900: #48556A;
+
+    --var-spacing-0: 0px;
+    --var-spacing-200: 16px;
+    --var-spacing-300: 24px;
+    --var-spacing-400: 32px;
+    --var-spacing-500: 40px;
+    --var-spacing-600: 48px;
+    --var-spacing-700: 56px;
+    --var-spacing-800: 64px;
+    --var-spacing-1300: 104px;
+    --var-spacing-2000: 160px;
+
+    font-family: "Manrope", sans-serif;
+    background-color: var(--var-grey-200);
+
+    display: flex;
+    height: 100vh;
+}
+
+.card {
+    background-color: var(--var-white);
+    width: 20.5em;
+    height: 33.625em; 
+    border-radius: 1em;  
+    overflow: hidden;
+    
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    gap: 2em;
+    margin: auto;
+}
+
+.card-image {
+    overflow: hidden;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    padding-inline: 1.875em;
+}
+
+.card-image {
+    align-self: stretch;
+}
+
+.drawers-image {
+    height: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+.icon-container {
+    width: 2em;
+    height: 2em;
+    background-color: var(--var-grey-200);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.icon {
+    width: 1em;
+    color: var(--var-grey-500);
+}
+
+.footer-display-profile {
+    display: flex;
+    background-color: var(--var-white);
+    justify-content: space-between;
+    padding-inline: 1.875em;
+    align-content: center;
+    width: 100%;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.profile-avatar {
+    width: 2.5em;
+    border-radius: 50%;
+}
+
+.footer-display-share {
+    display: flex;
+    justify-content: center;
+    background-color: var(--var-grey-900);
+    align-content: center;
+    width: 100%;
+}
+
+.icon-container:hover,
+.icon-container:focus {
+    background-color: black;
+    cursor: pointer;
+}
+
+.share-ribbon {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    gap: 4em;
+    padding-block: 1.5em;
+}
+
+.share-ribbon-text {
+    width: 4em;
+}
+
+.share-tooltip {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+}
+
+.media-icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.dark {
+    background-color: var(--var-grey-900);
+}
+
+.dark-text {
+    color: var(--var-grey-400);
+}
+
+.grey-text {
+    color: var(--var-grey-500);
+}
+
+.text-preset-1 {
+    font-size: 1.25em;
+    line-height: 1.3;
+    letter-spacing: 0.25px;
+}
+
+.text-preset-2 {
+    font-size: 0.8125em;
+    line-height: 1.4;
+    letter-spacing: 0.12%;
+}
+
+.text-preset-3 {
+    font-size: 0.8125em;
+    line-height: 1.4;
+    letter-spacing: 25%;
+    text-transform: uppercase;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (min-width: 48em) and (max-width: 75em) {
+    .card {
+        width: 38em;
+        height: 21.625em;
+        gap: 0em;
+
+        flex-direction: row;
+    }
+    
+    .drawers-image {
+        height: 100%;
+        transform: scale(1.2);
+    }
+}
+
+@media screen and (min-width: 75em) {
+    .card {
+        width: 45.625em;
+        height: 17.5em;
+        flex-direction: row;
+    }
+    
+    .card-content {
+        gap: 1.5em;
+    }
+}
