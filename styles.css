@@ -17,7 +17,7 @@ body {
     background-color: var(--var-grey-200);
 
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .card {
@@ -72,6 +72,15 @@ img {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+}
+
+.share-button {
+    border: 0;
+    padding: 0;
+}
+
+.social-link {
+    text-decoration: none;
 }
 
 .icon {
@@ -133,7 +142,7 @@ img {
 }
 
 .icon-container:hover,
-.icon-container:focus {
+.icon-container:focus-visible {
     background-color: black;
     cursor: pointer;
 }
@@ -193,6 +202,8 @@ img {
         .share-tooltip {
             position: absolute;
             bottom: 160%;
+            left: 50%;
+            transform: translateX(-50%);
             background-color: var(--var-grey-900);
             padding: 0.5em 3em;
             border-radius: 0.5em;
@@ -203,6 +214,7 @@ img {
             content: "";
             position: absolute;
             top: 100%;
+            left: 50%;
             margin-left: -5px;
             border-width: 5px;
             border-style: solid;

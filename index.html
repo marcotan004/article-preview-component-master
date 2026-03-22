@@ -40,20 +40,20 @@
                 <p class="text-preset-3 dark-text">Share</p>
               </div>
               <div class="media-icons">
-                <div class="icon-container dark">
-                  <img class="icon" src="images/icon-facebook.svg" alt="facebook icon">
-                </div>
-                <div class="icon-container dark">
-                  <img class="icon" src="images/icon-twitter.svg" alt="twitter icon">
-                </div>
-                <div class="icon-container dark">
-                  <img class="icon" src="images/icon-pinterest.svg" alt="pintrest icon">
-                </div>
+                <a class="icon-container dark social-link" href="https://www.facebook.com/sharer/sharer.php?u=https://example.com" aria-label="Share on Facebook" target="_blank" rel="noopener noreferrer">
+                  <img class="icon" src="images/icon-facebook.svg" alt="">
+                </a>
+                <a class="icon-container dark social-link" href="https://twitter.com/intent/tweet?url=https://example.com" aria-label="Share on Twitter" target="_blank" rel="noopener noreferrer">
+                  <img class="icon" src="images/icon-twitter.svg" alt="">
+                </a>
+                <a class="icon-container dark social-link" href="https://pinterest.com/pin/create/button/?url=https://example.com" aria-label="Share on Pinterest" target="_blank" rel="noopener noreferrer">
+                  <img class="icon" src="images/icon-pinterest.svg" alt="">
+                </a>
               </div>
             </div>
-            <div id="share-container" class="icon-container share-container-dark">
-              <img id="icon" class="icon share-icon-dark" src="images/icon-share.svg" alt="share icon">
-            </div>
+            <button id="share-container" class="icon-container share-container-dark share-button" type="button" aria-label="Toggle share options" aria-expanded="false" aria-controls="share-tooltip">
+              <img id="icon" class="icon share-icon-dark" src="images/icon-share.svg" alt="">
+            </button>
           </div>
         </div>
       </div>
