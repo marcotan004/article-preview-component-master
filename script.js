@@ -7,13 +7,15 @@ const toggleShare = (e) => {
     }
 
     if (footerDisplay.classList.contains("share-open")) {
-        footerDisplay.classList.remove("share-open");
-        shareContainer.setAttribute("aria-expanded", "false");
+        footerDisplay?.classList.remove("share-open");
+        shareContainer?.setAttribute("aria-expanded", "false");
 
     } else {
-        footerDisplay.classList.add("share-open");
-        shareContainer.setAttribute("aria-expanded", "true");
+        footerDisplay?.classList.add("share-open");
+        shareContainer?.setAttribute("aria-expanded", "true");
     }
 }
 
-shareContainer.addEventListener('click', toggleShare);
+if (shareContainer) {
+    shareContainer.addEventListener('click', toggleShare);
+}
