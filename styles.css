@@ -77,6 +77,7 @@ img {
 .share-button {
     border: 0;
     padding: 0;
+    cursor: pointer;
 }
 
 .social-link {
@@ -145,6 +146,18 @@ img {
 .icon-container:focus-visible {
     background-color: black;
     cursor: pointer;
+}
+
+.share-button:hover,
+.share-button:focus-visible,
+.share-button[aria-expanded="true"] {
+    background-color: var(--var-grey-500);
+}
+
+.share-button:hover .icon,
+.share-button:focus-visible .icon,
+.share-button[aria-expanded="true"] .icon {
+    filter: brightness(0) invert(1);
 }
 
 .share-ribbon-text {
